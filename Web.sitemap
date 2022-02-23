@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  
+  <siteMapNode url="Default.aspx" title="" description="•"  >
+   
+   <siteMapNode url="sr/Default.aspx" title="Српски" description=""  >
+
+     <siteMapNode url="sr/Vesti.aspx" title="Вести"  description="" >
+      <siteMapNode url="sr/Vest.aspx" title="Опширно"  description="" />
+     </siteMapNode>
+      
+    <siteMapNode url="sr/OBosilegradu.aspx" title="O Босилеграду"  description="" >
+      <siteMapNode url="sr/Stanovnistvo.aspx" title="Становништво"  description="" />
+      <siteMapNode url="sr/Istorija.aspx" title="Историја"  description="" />
+    </siteMapNode>
+     
+    <siteMapNode url="sr/Javne_sluzbe.aspx" title="Јавне службе"  description="" >
+      <siteMapNode url="sr/Obrazovanje.aspx" title="Образовање"  description="" />
+      <siteMapNode url="sr/Zdravstvo.aspx" title="Здравство"  description="" />
+      <siteMapNode url="sr/Javna_preduzeca.aspx" title="Јавна предузећа"  description="" />
+      <siteMapNode url="sr/Ustanove.aspx" title="Установе"  description="" />
+    </siteMapNode>
+    <siteMapNode url="sr/Javne_nabavke.aspx" title="Јавне набавке"  description="" /> 
+    <siteMapNode url="sr/Privreda.aspx" title="Привреда"  description="" />
+    <siteMapNode url="sr/Sport.aspx" title="Спорт"  description="" />
+    <siteMapNode url="sr/Galerija.aspx" title="Галерија"  description="" /> 
+    <siteMapNode url="sr/Kontakt.aspx" title="Контакт"  description="" />
+    </siteMapNode>
+   
+   
+    
+    <siteMapNode url="bg/Default.aspx" title="Български" description=""  >
+     
+     <siteMapNode url="bg/Vesti.aspx" title="Новини"  description="" >
+     <siteMapNode url="bg/Vest.aspx" title="Обширно"  description="" />
+     </siteMapNode>
+      
+     <siteMapNode url="bg/OBosilegradu.aspx" title="За Босилеград"  description="" >
+      <siteMapNode url="bg/Stanovnistvo.aspx" title="Население"  description="" />
+      <siteMapNode url="bg/Istorija.aspx" title="История"  description="" />
+    </siteMapNode>
+    <siteMapNode url="bg/Javne_sluzbe.aspx" title="Обществени организации"  description="" >
+      <siteMapNode url="bg/Obrazovanje.aspx" title="Образование"  description="" />
+      <siteMapNode url="bg/Zdravstvo.aspx" title="Здравеопазване"  description="" />
+      <siteMapNode url="bg/Javna_preduzeca.aspx" title="Обществени предприятия"  description="" />
+      <siteMapNode url="bg/Ustanove.aspx" title="Ведомства"  description="" />
+    </siteMapNode>
+    <siteMapNode url="bg/Javne_nabavke.aspx" title="Обществени поръчки"  description="" />  
+    <siteMapNode url="bg/Privreda.aspx" title="Стопанство"  description="" />
+    <siteMapNode url="bg/Sport.aspx" title="Спорт"  description="" />
+    <siteMapNode url="bg/Galerija.aspx" title="Галерия"  description="" />
+    <siteMapNode url="bg/Kontakt.aspx" title="Контакти"  description="" />
+  </siteMapNode>
+ </siteMapNode>
+</siteMap>
