@@ -1,0 +1,68 @@
+USE [bosilegr_kursova]
+GO
+/****** Object:  Table [bosilegr_kursuser].[Dokumenti]    Script Date: 2/14/2021 6:48:53 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [bosilegr_kursuser].[Dokumenti](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[Opis] [nvarchar](100) NULL,
+	[Naziv] [nvarchar](100) NULL,
+	[Tip] [varchar](50) NULL,
+	[Velicina] [int] NULL,
+	[Dokument] [image] NULL,
+	[Nabavka_ID] [int] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [bosilegr_kursuser].[Galerija]    Script Date: 2/14/2021 6:48:54 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [bosilegr_kursuser].[Galerija](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[Opis] [nvarchar](255) NULL,
+	[Slika] [image] NULL,
+	[Orjent_slike] [nchar](1) NULL,
+	[Jezik_id] [nchar](2) NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [bosilegr_kursuser].[Nabavke]    Script Date: 2/14/2021 6:48:54 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [bosilegr_kursuser].[Nabavke](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[PIB] [nchar](10) NULL,
+	[Narucilac] [nvarchar](100) NULL,
+	[Naziv_postupka] [nvarchar](200) NULL,
+	[Vrsta_postupka] [nvarchar](100) NULL,
+	[Vrsta_predmeta] [nvarchar](100) NULL,
+	[Procenjena_vrednost] [decimal](12, 2) NULL,
+	[Status] [nchar](20) NULL,
+	[Datum_objave] [nchar](10) NULL,
+	[Rok_objave] [nchar](10) NULL,
+	[Jezik_id] [nchar](2) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [bosilegr_kursuser].[Vesti]    Script Date: 2/14/2021 6:48:54 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [bosilegr_kursuser].[Vesti](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[Nadnaslov] [nvarchar](255) NULL,
+	[Naslov] [nvarchar](255) NULL,
+	[Podnaslov] [ntext] NULL,
+	[Tekst] [ntext] NULL,
+	[Opis] [nvarchar](255) NULL,
+	[Slika] [image] NULL,
+	[Orjent_slike] [nchar](1) NULL,
+	[Jezik_id] [nchar](2) NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+ALTER TABLE [bosilegr_kursuser].[Nabavke] ADD  CONSTRAINT [DF_Nabavke_Jezik_id]  DEFAULT (N'sr') FOR [Jezik_id]
+GO

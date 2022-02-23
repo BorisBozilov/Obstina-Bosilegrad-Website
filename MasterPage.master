@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage"%>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Content-Language" content="sr"/>
+
+     <link rel="shortcut icon" href="pozadine/favicon.gif" />
+        
+    <title>Курсова работа - Борис Божилов</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+     .menuLink    { font-size: 8pt; font-family: verdana, helvetica, sans-serif; 
+               color: #69c8ff; text-decoration: none }
+     .menuLink:hover { color: #3d6d91; text-decoration: underline }
+     .jezik {
+	 color: #69c8ff; 
+	 font-size : 10px;
+	 font-family : verdana, helvetica, sans-serif;
+     }
+     </style>
+
+     <style type="text/css">
+		body { background-color: #00a0fd; padding: 0 25px; color:#000; font: 13px/18px Arial, sans-serif; }
+		a { color: #00182a; }
+		h3 { padding-top: 50px; }
+		ol { margin:5px 0 15px 16px; padding:0; list-style-type:square; }
+	     .style1
+         {
+             color: #000033;
+         }
+	 </style>
+
+</head>
+<body background="pozadine/pozadina.png"> 
+ 
+<br />
+
+<table  width="1000px" align="center" border="0" cellspacing="0" cellpadding="0" 
+         bgcolor="#FFFFFF" frame="border"  style="border-color: #003399; border-style: outset;">
+ <tr>
+  <td>
+      
+   <table  width="1000px" align="center" border="0" cellspacing="5" cellpadding="0" 
+               style="position: relative; top: -2px; left: 0px">
+     <tr>
+  
+      <td width="20%" align="center" valign="top" bgcolor="#69c8ff">
+         
+           <br />
+           <img alt="" border="0" src="Images/logo_opstine_sr.jpg" height="200px" width="200px"
+           style="border-color: #FFFFFF; border-style: outset;" /></td>
+    
+      <td width="60%" valign="top">
+      
+          <table  width="100%" align="center" border="0" cellspacing="0" cellpadding="0" 
+                style="position: relative;  left: 0px">
+           <tr>
+             <td bgcolor="#69c8ff" style="font-size: x-small">
+
+              <!--Sajt navigacija -->
+           
+                 &nbsp;
+                 <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Size="8pt" 
+                  ForeColor="#000033">
+                 </asp:SiteMapPath>
+                                 
+             </td>
+           </tr>
+         </table>
+
+        
+           <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+               <p>
+                &nbsp;</p>
+           </asp:ContentPlaceHolder>
+                
+       </td>
+
+       
+       <td width="20%" align="center" valign="top" bgcolor="#69c8ff">
+            <br />
+            <img alt="" border="0" src="Images/logo_opstine_bg.jpg" height="200px" width="200px"
+            style="border-color: #FFFFFF; border-style: outset;" /></td>
+       </td>
+      
+      </tr>
+     </table>
+
+   </td>
+  </tr>
+</table>
+
+<br />
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center" class="style1">
+      Design &amp; developing by Boris&nbsp; Bozilov 2020-2021.
+     </td>
+  </tr>
+</table>
+</div>
+
+
+</body>
+</html>

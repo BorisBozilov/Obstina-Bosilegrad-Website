@@ -1,0 +1,379 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Content-Language" content="bg"/>
+        
+    <link rel="shortcut icon" href="pozadine/favicon.gif" />
+
+    <title>Курсова работа - Борис Божилов</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="pro_dropdown_2/pro_dropdown_2.css" />
+    <script src="pro_dropdown_2/stuHover.js" type="text/javascript"></script>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+     <style type="text/css">
+     .menuLink    { font-size: 8pt; font-family: verdana, helvetica, sans-serif; 
+               color: #69c8ff; text-decoration: none }
+     .menuLink:hover { color: #3d6d91; text-decoration: underline }
+     .jezik {
+	 color: #69c8ff;
+	 font-size : 10px;
+	 font-family : verdana, helvetica, sans-serif;
+     }
+     </style>
+
+     	<style type="text/css">
+		body { background-color: #00a0fd; padding: 0 25px; color:#000; font: 13px/18px Arial, sans-serif; }
+		a { color: #00182a; }
+		h3 { padding-top: 50px; }
+		ol { margin:5px 0 15px 16px; padding:0; list-style-type:square; }
+	    </style>
+
+      <style type="text/css">
+       body 
+       {
+        background-image:url('pozadine/pozadina_opstina.png');
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+       }
+      </style>
+
+</head>
+
+
+<body>
+
+<div id="fb-root"></div>
+<script type="text/javascript">    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/bg_BG/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    } (document, 'script', 'facebook-jssdk'));
+</script>
+ 
+ 
+
+<div align="center">
+  <table width="1000"  border="0" align="center" cellpadding="0" cellspacing="0">
+       <tr>
+       <td  width="130" height="20" bgcolor="#00182a">
+          <p style="margin-left: 0; margin-top: 0; margin-bottom: 0" align="left">  	       
+             <a class="menuLink" href="http://kursova.bosilegrad.org/bg/Mapa_sajta.aspx" target="_self"  >[Карта на сайта]</a>		  
+              <img alt="" src="pozadine/IconSiteMap.gif" />
+          </p>
+       </td>
+
+      <td  width="120" height="20" bgcolor="#00182a">
+          <p style="                  margin-left: 0;
+                  margin-top: 0;
+                  margin-bottom: 0" align="left">  	       
+             <a class="menuLink" href="http://kursova.bosilegrad.org/Admin_panel.aspx" target="_blank"  >[Админ. панел]</a>		  
+              
+          </p>
+       </td>
+
+       <td width="750"  height="20" bgcolor="#00182a">
+          <p style="margin-left: 0; margin-top: 0; margin-bottom: 0" align="right">  	       
+	        <span class="jezik">Изберете език: </span>
+	        <a class="menuLink" href="http://kursova.bosilegrad.org/sr/default.aspx" target="_self"  >[Српски]</a> 
+            <a class="menuLink" href="http://kursova.bosilegrad.org/bg/default.aspx" target="_self"  >[Български]</a>		  
+          </p>
+        </td>
+        
+        </tr>        
+  </table>
+</div>
+ 
+ <table  width="1000px" align="center" border="0" cellspacing="0" cellpadding="0" 
+         bgcolor="#FFFFFF" frame="border"  style="         border-color: #003399;
+         border-style: outset;">
+     <tr>
+       <td width="100%">
+    
+    <table  width="1000px" align="center" border="0" cellspacing="0" cellpadding="0">
+     <tr>
+       <td width="20%" >
+    
+           <img alt="" border="1" src="Images/logo_opstine_new.jpg" height="198px" width="200px"
+           style="border-color: #FFFFFF" />
+   
+       </td>
+      
+       <td width="1px">
+       </td>
+
+       <td width="797px">
+     
+           <img id="slide" width="797" height="198"  src="Panorame/Bosilegrad6.jpg">
+
+        <script type="text/javascript">
+
+            var images = [];
+
+            images[0] = "Panorame/Bosilegrad1.jpg";
+            images[1] = "Panorame/Bosilegrad2.jpg";
+            images[2] = "Panorame/Bosilegrad3.jpg";
+            images[3] = "Panorame/Bosilegrad4.jpg";
+            images[4] = "Panorame/Bosilegrad5.jpg";
+            images[5] = "Panorame/Bosilegrad6.jpg";
+            images[6] = "Panorame/Bosilegrad7.jpg";
+            images[7] = "Panorame/Bosilegrad8.jpg";
+            images[8] = "Panorame/Bosilegrad9.jpg";
+            images[9] = "Panorame/Bosilegrad10.jpg";
+            images[10] = "Panorame/Bosilegrad11.jpg";
+            images[11] = "Panorame/Bosilegrad12.jpg";
+            images[12] = "Panorame/Bosilegrad13.jpg";
+            images[13] = "Panorame/Bosilegrad14.jpg";
+            images[14] = "Panorame/Bosilegrad15.jpg";
+            images[15] = "Panorame/Bosilegrad16.jpg";
+            images[16] = "Panorame/Bosilegrad17.jpg";
+            images[17] = "Panorame/Bosilegrad18.jpg";
+            images[18] = "Panorame/Bosilegrad19.jpg";
+            images[19] = "Panorame/Bosilegrad20.jpg";
+            images[20] = "Panorame/Bosilegrad21.jpg";
+            images[21] = "Panorame/Bosilegrad22.jpg";
+
+            var i = 0;
+            setInterval(function () {
+                var slide = document.querySelector("#slide"); //Select the img element by ID
+                slide.src = images[i++];
+                if (i > images.length - 1)
+                    i = 0;
+            }, 3000); //Time in milliseconds
+        
+        </script>
+     
+
+     
+             
+      </td>
+     
+       <td width="1px">
+       </td>
+
+     </tr>
+    </table>
+
+    <table  width="1000px" align="center" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+       <td width="100%">
+      
+
+<!-- Glavni meni prezentacije -->
+
+<span class="preload1"></span>
+<span class="preload2"></span> 
+
+<ul id="nav">
+	<li class="top"><a href="Vesti.aspx" class="top_link"><span>Новини</span></a></li>
+	<li class="top"><a href="OBosilegradu.aspx" id="products" class="top_link"><span class="down">За Босилеград</span></a>
+		<ul class="sub">
+			<li><a href="OBosilegradu.aspx">За Босилеград</a></li>
+			<li><a href="Istorija.aspx">История</a></li>
+		</ul>
+	</li>
+	<li class="top"><a href="Javna_preduzeca.aspx" id="shop" class="top_link"><span class="down">Обществени организации</span></a>
+		<ul class="sub">
+			<li><a href="Obrazovanje.aspx">Образование&nbsp;</a></li>
+            <li><a href="Zdravstvo.aspx">Здравеопазване&nbsp;</a></li>	
+    		<li><a href="Javna_preduzeca.aspx">Обществени предприятия&nbsp;</a></li>
+			<li><a href="Ustanove.aspx">Ведомства</a></li>
+		</ul>
+	</li>
+
+	<li class="top"><a href="Javne_nabavke.aspx" id="A1" class="top_link"><span>Обществени поръчки</span></a></li>
+
+	<li class="top"><a href="Privreda.aspx" id="A2" class="top_link"><span>Стопанство</span></a></li>
+
+    <li class="top"><a href="Sport.aspx" id="A3" class="top_link"><span>Спорт</span></a></li>
+
+    <li class="top"><a href="Galerija.aspx" id="A4" class="top_link"><span>Галерия</span></a></li>
+
+	<li class="top"><a href="Kontakt.aspx" id="privacy" class="top_link"><span>Контакт</span></a></li>
+</ul>
+
+      
+      
+       </td>
+      </tr>
+    </table>
+    
+    <table  width="1000px" align="center" border="0" cellspacing="5" cellpadding="0" 
+               style="position: relative; top: -2px; left: 0px">
+ 
+     <tr>
+     <td width="20%" align="center" valign="top" bgcolor="#69c8ff" >
+
+
+
+          <br />
+         <a href="Informator_o_radu_opstine.aspx">
+         <img alt="" src="images/Baner_Informator_sr.gif" border="1" /></a><br />
+
+         <br />
+         <a href="pdf/Usluzni_centar.pdf" target="_blank">
+         <img alt="" src="images/Usluzni_centar_baner.jpg" border="1" width="160" /></a><br />    
+         
+         <br />
+         <a href="pdf/BUDZET/Gradjanski budzet opstine Bosilegrad za 2020.g.pdf">
+         <img alt="" src="images/Vodic_korz_gradjanski_Budzet.png" border="1" /></a><br />
+          
+         <br />
+         <a href="Popis_stanovnistva.aspx">
+         <img alt="" src="images/popis_stanovnistva.jpg" 
+         style="height: 85px; width: 160px" border="1" /></a><br />
+ 
+         <br />
+         <a href="Popis_poljoprivrede.aspx">
+         <img alt="" src="images/popislogo1.png" style="height: 140px; width: 160px" 
+         border="1" /></a><br />
+ 
+
+        
+     </td>
+    
+     <td width="60%" valign="top">
+      
+      <table  width="100%" align="center" border="0" cellspacing="0" cellpadding="0" 
+             style="position: relative;  left: 0px">
+        <tr>
+          <td bgcolor="#69c8ff" style="font-size: x-small">
+
+             <!--Sajt navigacija -->
+           
+            &nbsp;<asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Size="8pt" 
+                  ForeColor="#000033">
+            </asp:SiteMapPath>
+          
+             <!-- &nbsp;Почетна&gt;О Босилеграду&gt;Насеља-->
+          
+          </td>
+        </tr>
+      </table>
+
+      <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <p>
+                &nbsp;</p>
+        </asp:ContentPlaceHolder>
+      </div>
+        
+     </td>
+
+     <td width="20%" align="center" valign="top" bgcolor="#69c8ff">
+
+      <br />
+         <a href="http://radio.bosilegrad.rs/"  target="_blank">
+         <img alt="" src="images/Baner_Radio_Bosilegrad.jpg" border="1" /></a><br />
+     
+      <br />
+          <a href="http://novo.bratstvo.rs" target="_blank">
+         <img alt="" src="images/Logo_Novo_Bratstvo.png" border="1" width="160" /></a><br />
+      
+      <br />
+         <a href="http://www.youtube.com/user/tvbosilegrad" target="_blank">
+         <img alt="" src="images/Baner_YT_kanal.gif" border="1" width="160" /></a><br />
+ 
+     <br />
+         <a href="http://kultura.bosilegrad.rs/" target="_blank">
+         <img alt="" src="images/Kultura-Logo-Mini.jpg" border="1" width="160" /></a><br />  
+                           
+             <br />
+        
+        <div class="moduletable heading">
+        <table  width="160px" align="center" border="0"   cellspacing="0" cellpadding="0" style="border: 1px solid #000033">    
+               <tr>
+			      <td width="160px"  height="20px" bgcolor="#00182a">
+                	<b style="font-weight: bold; color: #FFFFFF; font-size: 11px;">&nbsp;&nbsp;Днешна валутна листа:</b>
+                  </td>
+               </tr>  
+			   <tr>
+			      <td width="160px" align="center"  height="160px" bgcolor="#FFFFFF">
+            		<script language="javascript" type="text/javascript">
+            		    function iFrameHeight() {
+            		        var h = 0;
+            		        if (!document.all) {
+            		            h = document.getElementById('blockrandom').contentDocument.height;
+            		            document.getElementById('blockrandom').style.height = h + 60 + 'px';
+            		        } else if (document.all) {
+            		            h = document.frames('blockrandom').document.body.scrollHeight;
+            		            document.all.blockrandom.style.height = h + 20 + 'px';
+            		        }
+            		    }
+                  </script>
+
+                  <iframe onload="iFrameHeight()"	id="blockrandom"
+	                name=""
+	                src="http://www.naslovi.net/plugin/kursna_lista2.php"
+	                width="150"
+	                height="160"
+	                scrolling="no"
+	                align="top"
+	                frameborder="0"
+	                class="wrapper">
+	              </iframe>
+                  <br />
+                  </td>
+               </tr>  
+          </table>
+         </div>
+           
+
+        <br />
+
+        <br />
+     
+     </td>
+     
+     </tr>
+    </table>
+
+    </td>
+   </tr>
+  </table>
+
+  <br/>
+
+<div align="center">
+
+<table>
+
+<tr>
+
+<td align="center">
+
+
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<br />
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center" class="style1">
+      Design &amp; developing by Boris&nbsp; Bozilov 2020-2021. All rights reserved.
+     </td>
+  </tr>
+</table>
+</div>
+
+</body>
+</html>
